@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <div style="display: flex; align-items: center; flex-direction: column;">
+        <h1>Enter Name: </h1>
+        <input type="text" id="name">
+        <button onclick="printname()" style="margin-top: 5px;">Print Name</button>
+
+        <h2 id="printedname" style="color: brown;"></h2>
+    </div>
+
+    <div style="display: flex; align-items: center; flex-direction: column;">
+        <h1>Simple calculations</h1>
+        <div>
+            <label for="num1">Enter number 1</label>
+            <input type="number" id="num1">
+        </div>
+        <div>
+            <label for="num2">Enter number 2</label>
+            <input type="number" id="num2">
+        </div>
+        <button style="margin-top: 5px;" onclick="calculate()">Calculate</button>
+        <div>
+            <h2>Calculations:</h2>
+            <div>Addition: <span id="add"></span></div>
+            <div>Subtraction: <span id="subtract"></span></div>
+            <div>Multiplication: <span id="multiply"></span></div>
+            <div>Division: <span id="divide"></span></div>
+        </div>
+
+        <div>
+            <h2>Today's Date:</h2>
+            <div>Date: <span id="date"></span></div>
+            <div>Day: <span id="day"></span></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
